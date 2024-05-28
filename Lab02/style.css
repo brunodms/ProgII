@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+:root {
+  --text-color: white;
+  --background-color: rgba(50, 50, 50);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+}
+.light {
+  --text-color: black;
+  --background-color: rgba(255, 255, 255);
+  --switch-bg-url: url(./assets/sun.svg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+header {
+  justify-content: space-between;
+  display: flex;
+  background-color: #00693e;
+  color: var(--text-color);
+  text-align: left;
+  padding: 20px 0;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+h2 {
+  font-size: 24px;
+}
+img {
+  max-width: 25%;
+  height: auto;
+  padding-left: 10%;
+  display: flex;
+}
+.info {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.bold {
+  font-weight: bold;
+  display: inline;
+}
+/* switch */
+#switch {
+  margin-right: 5%;
+  display: flex;
+  position: relative;
+  width: 64px;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-out 0.3s;
+}
+.light #switch button {
+  animation: slide-in 0.3s forwards;
+}
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+#switch span {
+  margin: auto;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+#lista_cursos {
+    background-color: #008f45;
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button-cursos {
+    cursor: pointer;
+    padding: 3.5px;
+    border: 2px transparent solid;
+}

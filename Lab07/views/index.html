@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Laboratório</title>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center">
+        <img class="float-start" src="./assets/uffs assinatura visual preferencial _fundo verde _RGB.png" alt="Logo da UFFS">
+        <div id="switch">
+            <button></button>
+            <span></span>
+        </div>
+    </header>
+    <div style="width: 100vw;" class="btn-group" role="group" aria-label="Basic example">
+        <button class="col-3 btn button-cursos" data-target="#curso_cc">Ciência da Computação</button>
+        <button class="col-3 btn button-cursos" data-target="#curso_historia">História</button>
+        <button class="col-3 btn button-cursos" data-target="#curso_filosofia">Filosofia</button>
+        <button class="col-3 btn button-cursos" data-target="#curso_geografia">Geografia</button>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="container d-none" id="curso_cc">
+                <section>
+                    <h2>Ciencia da Computação</h2>
+                    <div class="info">
+                        <div class=" fw-bold d-inline">Turno:</div> Vespertino e Noturno.<br>
+                        <div class=" fw-bold d-inline">Duração Mínima:</div> Matutino: 8 semestres; Noturno: 10 semestres.<br>
+                        <div class=" fw-bold d-inline">Modalidade:</div> Presencial<br>
+                        <div class=" fw-bold d-inline">Coordenador:</div> Braulio Adriano de Mello<br>
+                        <div class=" fw-bold d-inline">Sobre o Curso:</div><br>
+                        O Curso de Ciência da Computação da UFFS é um curso que pretende, através de bases sólidas da área de computação,
+                        formar cientistas capazes de terem um papel importante em áreas da tecnologia da informação (TI), 
+                        tanto na indústria quanto na academia. O curso oferece várias opções para o estudante se aprofundar: 
+                        banco de dados, computação gráfica, redes de computadores, engenharia de software, hardware e teoria da computação. 
+                        Todos os professores se dedicam integralmente ao curso e todos possuem no mínimo o título de mestre, sendo que aproximadamente a metade tem o título de doutor.
+                        Esse perfil dos professores faz com que os estudantes tenham contato com assuntos de ponta da computação. Os estudantes têm acesso aos projetos de pesquisa e de extensão do curso,
+                        experiência profissional através do projeto FronteiraTec, além de várias opções de estágios em empresas da região.
+                    </div>
+                </section>
+            </div>
+            <div class="container d-none" id="curso_historia">
+                <section>
+                    <h2>História</h2>
+                    <div class="info">
+                        <div class=" fw-bold d-inline">Turno:</div> Noturno.<br>
+                        <div class=" fw-bold d-inline">Duração Mínima:</div> 9 semestres<br>
+                        <div class=" fw-bold d-inline">Modalidade:</div> Presencial<br>
+                        <div class=" fw-bold d-inline">Coordenador:</div> Nedilso Lauro Brugnera<br>
+                        <div class=" fw-bold d-inline">Sobre o Curso:</div><br>
+                        O Curso de Graduação em Historia – Licenciatura É estruturado em componentes curriculares que visam formar 
+                        profissionais/cidadãos comprometidos com a educação e a promoção do conhecimento, distribuídos em três domínios: 
+                        Comum – formação crítico-social e de instrumentalização acadêmica; Conexo – formação para a docência; 
+                        e Específico – componentes que visam perceber o passado humano de forma problematizadora, analisando o conhecimento histórico 
+                        já produzido e propondo a pesquisa e produção de novos conhecimentos e novos olhares sobre os já existentes.
+                    </div>
+                </section>
+            </div>
+            <div class="container d-none" id="curso_filosofia">
+                <section>
+                    <h2>Filosofia</h2>
+                    <div class="info">
+                        <div class=" fw-bold d-inline">Turno:</div> Noturno.<br>
+                        <div class=" fw-bold d-inline">Duração Mínima:</div> 9 semestres<br>
+                        <div class=" fw-bold d-inline">Modalidade:</div> Presencial<br>
+                        <div class=" fw-bold d-inline">Coordenador:</div> Cristina Otsuschi<br>
+                        <div class=" fw-bold d-inline">Sobre o Curso:</div><br>
+                        O Curso de Graduação em Filosofia – Licenciatura Oferta duas entradas anuais,
+                        uma no primeiro semestre e outra no segundo semestre. A matriz curricular do Curso é 
+                        composta por componentes curriculares em três domínios: Comum, cujas disciplinas visam à 
+                        formação geral dos discentes; Conexo, com o objetivo de proporcionar aos alunos o contato 
+                        com os conteúdos e temas que se inter-relacionam nas diversas áreas afins de conhecimento; 
+                        Específico, que abrange os componentes curriculares diretamente ligados à formação do docente 
+                        em Filosofia.
+                    </div>
+                </section>
+            </div>
+            <div class="container d-none" id="curso_geografia">
+                <section>
+                    <h2>Geografia</h2>
+                    <div class="info">
+                        <div class=" fw-bold d-inline">Turno:</div> Noturno.<br>
+                        <div class=" fw-bold d-inline">Duração Mínima:</div> 9 semestres<br>
+                        <div class=" fw-bold d-inline">Modalidade:</div> Presencial<br>
+                        <div class=" fw-bold d-inline">Coordenador:</div> Bruno Antonio Picoli<br>
+                        <div class=" fw-bold d-inline">Sobre o Curso:</div><br>
+                        O Curso de Graduação em Geografia – Licenciatura tem como propósito a formação de profissionais da área 
+                        de Geografia, voltados ao desempenho das tarefas ligadas ao universo da educação, relativas à programação,
+                        à implementação, à pesquisa científica e à avaliação do processo ensino-aprendizagem no Ensino Fundamental
+                        e no Ensino Médio. O curso justifica-se, por um lado, pela alta demanda – nas regiões de abrangência da 
+                        Universidade – de professores de Geografia com formação específica e de qualidade. Por outro lado, a 
+                        importância do curso reside na sua proposta formativa, subsidiando reflexões e ações de cunho teórico e 
+                        prático, relativas à problemática socioambiental e ao contexto cultural, econômico, político, científico 
+                        e acadêmico em que está inserido. Assim, os objetivos do Curso de Graduação em Geografia - Licenciatura 
+                        estão em sintonia com os princípios filosóficos que orientam a Universidade Federal da Fronteira Sul:
+                        <br>
+                        a) Garantir a formação de licenciados em Geografia que pensem, pratiquem e trabalhem o ensino de Geografia;
+                        <br>
+                        b) Tornar disponível aos graduandos um referencial teórico, metodológico e instrumental que lhes garanta condições de obter uma visão geral em Geografia e trabalhá-la no âmbito do ensino e da pesquisa;
+                        <br>
+                        c) Formar profissionais em Geografia para práticas de ensino e de pesquisa com as bases teóricas e práticas para reflexão;
+                        <br>
+                        d) Promover a formação sociocultural e política dos acadêmicos para aplicação em sua vida pessoal e profissional;
+                        <br>
+                        e) Desenvolver reflexão e competência crítica propositiva.
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

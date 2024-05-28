@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  },
+  "name": "servidor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "author": "Bruno de Macedo",
+  "license": "MIT",
+  "description": "Laboratório 5 de Prog II"
+}
